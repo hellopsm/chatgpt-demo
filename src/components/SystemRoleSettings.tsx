@@ -35,12 +35,7 @@ export default (props: Props) => {
             </div>
           </div>
         </Show>
-        <Show when={!props.currentSystemRoleSettings() && props.canEdit()}>
-          <span onClick={() => props.setSystemRoleEditing(!props.systemRoleEditing())} class="sys-edit-btn">
-            <IconEnv />
-            <span>设置机器人扮演角色</span>
-          </span>
-        </Show>
+ 
       </Show>
       <Show when={props.systemRoleEditing() && props.canEdit()}>
         <div>
